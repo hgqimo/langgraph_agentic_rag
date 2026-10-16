@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langgraph-rag"
+version = "0.1.0"
+description = "Agentic RAG workflow on LangGraph with INTERACT-RAG style retrieval loop, GAM-RAG style self-evolving memory, and model-level reranking"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+dependencies = [
+    "langgraph==1.2.14",
+    "langchain==1.4.3",
+    "langchain-core==1.6.7",
+    "langchain-openai==1.6.7",
+    "requests==2.34.2",
+    "numpy<2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+langgraph_rag = ["py.typed"]

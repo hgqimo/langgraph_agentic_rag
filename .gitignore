@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Environment & secrets
+.env
+
+# Datasets (download instructions in datasets/README.md)
+datasets/*
+!datasets/README.md
+
+# Evaluation outputs & memory databases (keep the write-ups)
+results/*
+!results/.gitkeep
+!results/*.md
+*.db
+*.sqlite3
+.cache/
+docs/
+
+# Logs
+*.log
+logs/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
